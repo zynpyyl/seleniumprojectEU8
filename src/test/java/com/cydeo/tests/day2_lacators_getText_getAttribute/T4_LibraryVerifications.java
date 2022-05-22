@@ -20,6 +20,8 @@ public class T4_LibraryVerifications {
         WebElement signInButton=driver.findElement(By.tagName("button"));
         signInButton.click();
 
+    //    WebElement element = driver.findElement(By.xpath("//div[@class='alert alert-danger']"));
+    //    System.out.println("element.getText() = " + element.getText());
 
     }
 }

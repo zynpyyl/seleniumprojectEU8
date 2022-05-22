@@ -9,7 +9,8 @@ public class T5_Locators_Xpath_Pactice {
     public static void main(String[] args) {
         WebDriver driver= WebDriverFactory.getDriver("chrome");
         driver.get("https://login1.nextbasecrm.com/?forgot_password=yes");
-        WebElement userName = driver.findElement(By.xpath("//input[@class='login-inp']"));
+        //WebElement userName = driver.findElement(By.xpath("//input[@class='login-inp']"));
+        WebElement userName = driver.findElement(By.cssSelector("input[name='USER_LOGIN']"));
         userName.sendKeys("incorrect");
         WebElement resetPasswordButton = driver.findElement(By.xpath("//button[@value='Reset password']"));
         resetPasswordButton.click();
